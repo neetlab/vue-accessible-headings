@@ -9,7 +9,12 @@ env:
   PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
+  test:
+    uses: ./.github/workflows/test.yaml
+    secrets: inherit
+
   version:
+    needs: [test]
     timeout-minutes: 15
     runs-on: ubuntu-latest
 
@@ -35,6 +40,9 @@ jobs:
 
       - name: install dependencies
         run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
       - name: create and publish versions
         uses: changesets/action@v1
