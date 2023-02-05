@@ -1,5 +1,11 @@
 # vue-accessible-headings
 
+## 1.0.2
+
+### Patch Changes
+
+- [`df1c61b`](https://github.com/neet/vue-accessible-headings/commit/df1c61b18faaa6eed894fa74ef0b1037f35c7298) Thanks [@neet](https://github.com/neet)! - Add NPM_TOKEN to changesets action
+
 ## 1.0.1
 
 ### Patch Changes
