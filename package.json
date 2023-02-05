@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "vue-tsc && vite build",
+    "lint": "eslint .",
     "coverage": "vitest run --coverage",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "ci:version": "pnpm changeset version",
+    "ci:publish": "pnpm publish"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,8 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/vue": "^6.6.1",
     "@typescript-eslint/eslint-plugin": ">=5.43.0",
