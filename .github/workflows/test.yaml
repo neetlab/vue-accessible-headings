@@ -1,12 +1,13 @@
 name: Test
 on:
-  workflow_call:
   push:
     branches:
       - main
   pull_request:
     branches:
       - "*"
+  workflow_call:
+  workflow_dispatch:
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
