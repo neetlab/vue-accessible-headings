@@ -21,8 +21,8 @@ it("renders heading", () => {
           <v-h>second third header</v-h>
           <p>body</p>
         </v-section>
-			</v-section>
-		`,
+      </v-section>
+    `,
   });
 
   render(Subject);
