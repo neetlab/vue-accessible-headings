@@ -1,5 +1,13 @@
 # vue-accessible-headings
 
+## 1.0.3
+
+### Patch Changes
+
+- [`6a6bb25`](https://github.com/neet/vue-accessible-headings/commit/6a6bb25fc7c529ae5dc27bc7336606ebe2a3ad9b) Thanks [@neet](https://github.com/neet)! - Fix component name to be multiple words
+
+- [`06728a5`](https://github.com/neet/vue-accessible-headings/commit/06728a56cfa3b61dc2718eef251248fdaa9e9d8d) Thanks [@neet](https://github.com/neet)! - Update readme
+
 ## 1.0.2
 
 ### Patch Changes
