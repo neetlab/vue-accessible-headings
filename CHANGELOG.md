@@ -1,5 +1,13 @@
 # vue-accessible-headings
 
+## 1.0.4
+
+### Patch Changes
+
+- [`a751c46`](https://github.com/neet/vue-accessible-headings/commit/a751c46116910f1c0e6b414d87540e4aa0eb07d0) Thanks [@neet](https://github.com/neet)! - Prettify tests
+
+- [`6280ab5`](https://github.com/neet/vue-accessible-headings/commit/6280ab5e6179b25cbe4089c33cf31ddcd6c30990) Thanks [@neet](https://github.com/neet)! - Prettify tests
+
 ## 1.0.3
 
 ### Patch Changes
