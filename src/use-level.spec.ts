@@ -1,6 +1,8 @@
 import { render } from "@testing-library/vue";
+
 import { expect, it } from "vitest";
 import { defineComponent } from "vue";
+
 import { INJECTION_KEYS } from "./constants";
 import { useLevel } from "./use-level";
 

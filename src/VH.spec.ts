@@ -1,29 +1,27 @@
 import { render, screen } from "@testing-library/vue";
-import H from "./H.vue";
-import Region from "./Region.vue";
+
 import { expect, it } from "vitest";
 import { defineComponent } from "vue";
+
+import VH from "./VH.vue";
+import VRegion from "./VSection.vue";
 
 it("renders heading", () => {
   const Subject = defineComponent({
     // eslint-disable-next-line vue/no-reserved-component-names
-    components: { H, Region },
+    components: { VH, VRegion },
     template: `
-			<h>first header</h>	
+			<v-h>first header</v-h>	
 			<p>body</p>
-			<region>
-				<template #header>
-					<h>second header</h>	
-				</template>
+			<v-region>
+        <v-h>second header</v-h>	
 				<p>body</p>
-				<region>
-					<template #header>
-						<h>third header</h>
-						<h>second third header</h>
-					</template>
+				<v-region>
+          <v-h>third header</v-h>
+          <v-h>second third header</v-h>
 					<p>body</p>
-				</region>
-			</region>
+				</v-region>
+			</v-region>
 		`,
   });
 

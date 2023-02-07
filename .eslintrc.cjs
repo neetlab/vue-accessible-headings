@@ -51,20 +51,6 @@ module.exports = {
     },
   ],
   rules: {
-    "unicorn/filename-case": [
-      "error",
-      {
-        cases: {
-          pascalCase: true,
-          kebabCase: true,
-        },
-      },
-    ],
-    "vue/multi-word-component-names": [
-      "error",
-      {
-        ignores: ["H", "Region", "Provider"],
-      },
-    ],
+    "unicorn/filename-case": "off",
   },
 };
