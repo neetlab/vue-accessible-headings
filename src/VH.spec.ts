@@ -4,24 +4,24 @@ import { expect, it } from "vitest";
 import { defineComponent } from "vue";
 
 import VH from "./VH.vue";
-import VRegion from "./VSection.vue";
+import VSection from "./VSection.vue";
 
 it("renders heading", () => {
   const Subject = defineComponent({
     // eslint-disable-next-line vue/no-reserved-component-names
-    components: { VH, VRegion },
+    components: { VH, VSection },
     template: `
-			<v-h>first header</v-h>	
-			<p>body</p>
-			<v-region>
+      <v-h>first header</v-h>	
+      <p>body</p>
+      <v-section>
         <v-h>second header</v-h>	
-				<p>body</p>
-				<v-region>
+        <p>body</p>
+        <v-section>
           <v-h>third header</v-h>
           <v-h>second third header</v-h>
-					<p>body</p>
-				</v-region>
-			</v-region>
+          <p>body</p>
+        </v-section>
+			</v-section>
 		`,
   });
 
